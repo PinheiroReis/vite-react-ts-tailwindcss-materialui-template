@@ -2,7 +2,7 @@ import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Link from '@mui/material/Link'
 import Typography from '@mui/material/Typography'
-import ProTip from './ProTip'
+import ProTip from '@/components/ProTip'
 
 function Copyright() {
     return (
@@ -14,8 +14,8 @@ function Copyright() {
             }}
         >
             {'Copyright © '}
-            <Link color="inherit" href="https://mui.com/">
-                Your Website
+            <Link color="inherit" href="https://github.com/PinheiroReis/">
+                João Victor Pinheiro Reis
             </Link>{' '}
             {new Date().getFullYear()}.
         </Typography>
