@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router'
-import App from './App.tsx'
+import App from '@/App.tsx'
 
 // biome-ignore lint/style/noNonNullAssertion: It's a React feature
 ReactDOM.createRoot(document.getElementById('root')!).render(
