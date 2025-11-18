@@ -7,7 +7,16 @@ export default function DefaultLayout() {
     return (
         <Container maxWidth="sm">
             <Outlet />
-            <Box sx={{ my: 4 }}>
+            <Box
+                sx={{
+                    position: 'fixed',
+                    bottom: 0,
+                    left: 0,
+                    width: '100%',
+                    textAlign: 'center',
+                    p: 0,
+                }}
+            >
                 <Copyright />
             </Box>
         </Container>
