@@ -1,41 +1,31 @@
-# Material UI - Vite example in TypeScript
+# App
 
-## How to use
+This directory contains the frontend of the application, which is a [React](https://react.dev/) project created with [Vite](https://vitejs.dev/).
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+## Technologies
 
-<!-- #target-branch-reference -->
+-   **Framework**: React
+-   **Language**: TypeScript
+-   **Build Tool**: Vite
+-   **Package Manager**: pnpm
+-   **Linting and Formatting**: Biome
 
-```bash
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2 material-ui-master/examples/material-ui-vite-ts
-cd material-ui-vite-ts
-```
+## Getting Started
 
-Install it and run:
+1.  Install dependencies:
+    ```bash
+    pnpm install
+    ```
+2.  Run the development server:
+    ```bash
+    pnpm dev
+    ```
 
-```bash
-npm install
-npm run dev
-```
+## Scripts
 
-or:
+The `app/scripts` directory contains utility scripts to help with development:
 
-<!-- #target-branch-reference -->
-
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/github/mui/material-ui/tree/master/examples/material-ui-vite-ts)
-
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/material-ui-vite-ts)
-
-## The idea behind the example
-
-<!-- #host-reference -->
-
-This example demonstrates how you can use Material UI with [Vite](https://vite.dev) in [TypeScript](https://github.com/Microsoft/TypeScript).
-It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI.
-
-## What's next?
-
-<!-- #host-reference -->
-
-You now have a working example project.
-You can head back to the documentation and continue by browsing the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+-   `genenv.sh`: Generates the `.env` file from `.env.example`.
+-   `setup.sh`: Performs initial project setup, including dependency installation.
+-   `start.sh`: Starts the React development server.
+-   `test.sh`: Runs the Vitest test suite.
