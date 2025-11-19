@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box'
 import CircularProgress from '@mui/material/CircularProgress'
+import Link from '@mui/material/Link'
 import List from '@mui/material/List'
 import ListItem from '@mui/material/ListItem'
 import ListItemText from '@mui/material/ListItemText'
@@ -56,20 +57,27 @@ export default function Home() {
                 {items && (
                     <List>
                         {items.map((item) => (
-                            <ListItem
+                            <Link
+                                href={item.url}
                                 key={item.id}
-                                sx={{
-                                    bgcolor: 'grey.50',
-                                    mb: 1,
-                                    borderRadius: 2,
-                                    boxShadow: 1,
-                                }}
+                                target="_blank"
+                                rel="noopener"
+                                sx={{ textDecoration: 'none' }}
                             >
-                                <ListItemText
-                                    primary={item.description}
-                                    secondary={`ID: ${item.id} | CAT: ${item.categories}`}
-                                />
-                            </ListItem>
+                                <ListItem
+                                    sx={{
+                                        bgcolor: 'grey.50',
+                                        mb: 1,
+                                        borderRadius: 2,
+                                        boxShadow: 1,
+                                    }}
+                                >
+                                    <ListItemText
+                                        primary={item.description}
+                                        secondary={`ID: ${item.id} | CAT: ${item.categories} | Status: ${item.status}`}
+                                    />
+                                </ListItem>
+                            </Link>
                         ))}
                     </List>
                 )}
